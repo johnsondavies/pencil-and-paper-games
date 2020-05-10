@@ -1,5 +1,5 @@
 # Pencil and paper games
-These are the Lisp programs used to implement the game playing features of my website **Pencil and Paper Games**. You can run them in the Listener in any Common Lisp implementation.
+These are the Lisp programs used to implement the game playing features of my website [Pencil and Paper Games](http://www.papg.com/). You can run them in the Listener in any Common Lisp implementation.
 
 ## Table of contents
 * [Go-Moku](#go-moku)
@@ -52,7 +52,7 @@ Players take turns in writing their symbol in a cell. The restriction is that yo
 The first player unable to move loses.
 #### The interface
 ````text
-O to  move: c1
+O to move: c1
 
   A B C D E F (0) (0)
 1 O   O       
