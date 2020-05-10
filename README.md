@@ -4,7 +4,7 @@ These are the Lisp programs used to implement the game playing features of my we
 ## Table of contents
 * [Go-Moku](#go-moku)
 * [Obstruction](#obstruction)
-* [3D Noughts and Crosses](#3dox)
+* [3D Noughts and Crosses](#3d-noughts-and-crosses)
 
 
 ## Go-Moku
