@@ -14,7 +14,7 @@ The game is played on a large piece of squared paper, at least 15 x 15. The play
 ## Obstruction
 The game is played on a grid; 6 x 6 is a good size. One player is 'O' and the other is 'X'.
 
-Players take turns in writing their symbol in a cell. The restriction is that you can only play in a cell if all its neighbours are empty, shown as dots on the printed board.
+Players take turns in writing their symbol in a cell. The restriction is that you can only play in a cell if all its neighbours are empty; the available cells are shown as dots on the printed board.
 
 The first player unable to move loses.
 #### The interface
