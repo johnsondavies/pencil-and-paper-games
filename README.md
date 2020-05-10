@@ -27,3 +27,12 @@ O to  move: f1
 5 . _ _ _ X _ 
 6 . . . _ _ _ 
 ````
+### Running the program
+
+Load the file obstruction.lisp. Then evaluate the following commands in the Listener:
+
+    (in-package :obstruction)
+    (obstruction #'human (alpha-beta-searcher 3 #'static-evaluation))
+    
+You are 'O' and you start. You should give your move as a grid reference such as D3. 
+
