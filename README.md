@@ -29,7 +29,7 @@ O to  move: f1
 ````
 #### Running the program
 
-Load the file obstruction.lisp. Then evaluate the following commands in the Listener:
+Load the file **obstruction.lisp**. Then evaluate the following commands in the Listener:
 
     (in-package :obstruction)
     (obstruction #'human (alpha-beta-searcher 3 #'static-evaluation))
