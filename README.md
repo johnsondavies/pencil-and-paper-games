@@ -17,15 +17,17 @@ The game is played on a grid; 6 x 6 is a good size. One player is 'O' and the ot
 Players take turns in writing their symbol in a cell. The restriction is that you can only play in a cell if all its neighbours are empty, shown as dots on the printed board.
 
 The first player unable to move loses.
+#### The interface
 ````text
-O to  move: f1
+O to  move: c1
+
   A B C D E F (0) (0)
-1 . . . . _ O 
-2 . . . . _ _ 
-3 . _ _ _ . . 
-4 . _ O _ _ _ 
-5 . _ _ _ X _ 
-6 . . . _ _ _ 
+1 O   O       
+2           X 
+3 .           
+4 .   O   O   
+5             
+6 X   . .   X 
 ````
 #### Running the program
 
