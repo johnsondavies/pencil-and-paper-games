@@ -1,6 +1,4 @@
 # Pencil and paper games
-Coming soon!
-
 These are the Lisp programs used to implement the game playing features of my website **Pencil and Paper Games**. You can run them in the Listener in any Common Lisp implementation.
 
 ## Table of contents
