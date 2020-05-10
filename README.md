@@ -27,7 +27,7 @@ O to  move: f1
 5 . _ _ _ X _ 
 6 . . . _ _ _ 
 ````
-### Running the program
+#### Running the program
 
 Load the file obstruction.lisp. Then evaluate the following commands in the Listener:
 
