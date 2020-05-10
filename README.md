@@ -4,6 +4,7 @@ These are the Lisp programs used to implement the game playing features of my we
 ## Table of contents
 * [Go-Moku](#go-moku)
 * [Obstruction](#obstruction)
+* [3D Noughts and Crosses] (#3dox)
 
 
 ## Go-Moku
@@ -50,6 +51,7 @@ The game is played on a grid; 6 x 6 is a good size. One player is 'O' and the ot
 Players take turns in writing their symbol in a cell. The restriction is that you can only play in a cell if all its neighbours are empty; the available cells are shown as dots on the printed board.
 
 The first player unable to move loses.
+
 #### The interface
 ````text
 O to move: c1
@@ -74,4 +76,31 @@ You are 'O' and you start. You should give your move as a grid reference such as
 If you want to make it easy to beat the computer try:
 
     (obstruction #'human (alpha-beta-searcher 3 #'random-strategy))
+    
+## 3D Noughts and Crosses
+The game is played on a 4 x 4 x 4 board, represented by four 4 x 4 grids in a row.
+
+The players take turns in drawing their symbol, O or X, in one of the cells. The first player to make a line of four cells in any direction wins. Winning lines can be horizontal, vertical, diagonal within one grid, vertical between grids, diagonal between grids, or diagonal in all three dimensions.
+
+#### The interface
+````text
+O to  move: e3
+  A B C D    E F G H    I J K L    M N O P (-9140) (-8860)
+1 . . . X    . . . .    . . . .    . . . .    
+2 . . . O    . . . .    . . . .    . . . .    
+3 O O . X    O O . O    . O O X    . X . X    
+4 . . . X    . . . .    . . . .    . . . X  
+````
+#### Running the program
+
+Load the file **3dox.lisp**. Then evaluate the following commands in the Listener:
+
+    (in-package :3dox)
+    (3dox #'human (alpha-beta-searcher 3 #'count-difference))
+    
+You are 'O' and you start. You should give your move as a grid reference such as J3. 
+
+If you want to make it easy to beat the computer try:
+
+    (3dox #'human (alpha-beta-searcher 3 #'random-strategy))
 
