@@ -36,3 +36,7 @@ Load the file obstruction.lisp. Then evaluate the following commands in the List
     
 You are 'O' and you start. You should give your move as a grid reference such as D3. 
 
+If you want to make it easy to beat the computer try:
+
+    (obstruction #'human (alpha-beta-searcher 3 #'random-strategy))
+
